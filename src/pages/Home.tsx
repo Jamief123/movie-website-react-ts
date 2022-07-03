@@ -22,7 +22,6 @@ const Home = () => {
     } else {
         return (
             <>
-                <h1>Playing Now</h1>
                 <MovieList movies={movieList} />
             </>
         )
