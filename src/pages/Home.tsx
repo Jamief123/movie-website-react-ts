@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
+import { Movie } from '../api/data/MovieModels';
 import { getNowPlaying } from '../api/MovieApi'
-import { Movie } from '../api/MovieApi';
 import MovieList from '../components/MovieList';
 
 const Home = () => {

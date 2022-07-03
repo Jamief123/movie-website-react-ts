@@ -1,4 +1,5 @@
-import { Movie } from "../api/MovieApi";
+import { Link } from "react-router-dom";
+import { Movie } from "../api/data/MovieModels";
 import styles from './MovieItem.module.css';
 
 interface MovieItemProps {
@@ -8,11 +9,14 @@ const MovieItem: React.FC<MovieItemProps> = (props: MovieItemProps) => {
     const posterPath = "https://image.tmdb.org/t/p/w500/";
     return (
         <div className={styles.item}>
-            <img
-            className={styles.poster}
-            src={`${posterPath}${props.movie.poster_path}`}
-            />
-            <p>{props.movie.overview}</p>
+            <Link to={'/movie/' + props.movie.id}>
+                <img
+                className={styles.poster}
+                src={`${posterPath}${props.movie.poster_path}`}
+                />
+            </Link>
+
+            <p className={styles.overview}>{props.movie.overview}</p>
         </div>
     )
 };

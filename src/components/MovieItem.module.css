@@ -1,9 +1,15 @@
 .item{
     width: 300px;
     margin: 30px;
+    border-radius: 20px;
 }
 
 .poster{
     width: 300px;
     border-radius: 20px;
+    box-shadow: 5px 5px 2px gray;
+}
+
+.overview {
+    text-overflow: ellipsis " [..]";
 }

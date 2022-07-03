@@ -1,4 +1,4 @@
-import { Movie } from "../api/MovieApi";
+import { Movie } from "../api/data/MovieModels";
 import MovieItem from "./MovieItem";
 import styles from "./MovieList.module.css";
 
