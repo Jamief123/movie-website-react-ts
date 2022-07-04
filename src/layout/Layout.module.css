@@ -1,5 +1,5 @@
 * {
-    font-family: "Segoe UI";
+    font-family: "roboto";
 }
 .main {
     margin: auto;
@@ -11,6 +11,6 @@
     .main {
         margin: auto;
         padding: 1rem;
-        width: 80%;
+        width: 100%;
     }
 }

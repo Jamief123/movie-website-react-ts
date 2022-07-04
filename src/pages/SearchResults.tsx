@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import { Movie } from "../api/data/MovieModels"
 import MovieList from "../components/MovieList"
 import { getSearchQuery } from '../api/MovieApi';
+import { Typography } from "@mui/material";
 
 const SearchResults  = () =>  {
     const { query } =  useParams()
@@ -25,8 +26,10 @@ const SearchResults  = () =>  {
     } else {
         return (
             <>
-                <h1>Search Results for {query}</h1>
-                <MovieList movies={movieList} />
+            <Typography variant="h2">
+                Search Results for {query}
+            </Typography>
+            <MovieList movies={movieList} />
             </>
         )
     }   
